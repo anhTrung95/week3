@@ -1,0 +1,18 @@
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= yield(:title) %> | Ruby on Rails Turorial
+		</title>
+	</head>
+	<body>
+		<h1>Sample App </h1>
+			<p>
+				This is the home page for the
+				<a href = "http://www.railstutorial.org"> Ruby On Rails Turorial</a>
+				sample application.
+			</p>
+			<a href="#">Sign up now!</a><br/>
+			<%= link_to (image_tag("logo.png")) %>
+	</body>
+</html>
